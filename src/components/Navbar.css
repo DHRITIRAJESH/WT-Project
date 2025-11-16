@@ -1,14 +1,14 @@
 /* ===== Navbar Container ===== */
 .navbar {
-  background: rgba(255, 255, 255, 0.05);
-  /*backdrop-filter: blur(12px);*/
+  background: rgba(30, 30, 46, 0.95);
+  backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 50px;
   color: #f5f5f5;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(139, 155, 255, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -20,9 +20,10 @@
   font-size: 1.9rem;
   font-weight: 700;
   letter-spacing: 1px;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
- /* -webkit-background-clip: text;*/
+  background: linear-gradient(90deg, #8b9bff, #667eea);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -39,7 +40,7 @@
 
 /* ===== Each Link ===== */
 .navbar-links a {
-  color: #e0e0e0;
+  color: #c0c0c0;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -55,7 +56,7 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background: linear-gradient(90deg, #8b9bff, #667eea);
   transition: width 0.3s ease;
   border-radius: 2px;
 }
@@ -65,12 +66,12 @@
 }
 
 .navbar-links a:hover {
-  color: #00c6ff;
+  color: #8b9bff;
   transform: scale(1.05);
 }
 
 /* ===== Active Page Highlight ===== */
 .navbar-links a.active {
-  color: #00c6ff;
+  color: #8b9bff;
   font-weight: 600;
 }

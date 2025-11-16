@@ -6,6 +6,11 @@ import "./App.css";
 
 // Import pages based on your folder structure
 import Temphome from "./pages/Temphome";
+import Dashboard from "./pages/Dashboard";
+import Expenses from "./pages/Expenses";
+import Income from "./pages/Income";
+import Reports from "./pages/Reports";
+import Goals from "./pages/Goals";
 import AddTransaction from "./pages/AddTransaction";
 import Analytics from "./pages/Analytics";
 import Budget from "./pages/Budget";
@@ -13,6 +18,8 @@ import Categories from "./pages/Categories";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Transactions from "./pages/Transactions";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -22,6 +29,13 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Temphome />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/expenses" element={<Expenses />} />
+            <Route path="/income" element={<Income />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/goals" element={<Goals />} />
             <Route path="/add-transaction" element={<AddTransaction />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/budget" element={<Budget />} />

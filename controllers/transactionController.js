@@ -49,10 +49,10 @@ exports.getSummary = async (req, res) => {
   try {
     const transactions = await Transaction.find();
     const amounts = transactions.map((t) => t.amount);
-    const total = amounts.reduce((a, b) => a + b, 0);
     const income = amounts.filter((a) => a > 0).reduce((a, b) => a + b, 0);
-    const expense = amounts.filter((a) => a < 0).reduce((a, b) => a + b, 0);
-    res.json({ total, income, expense });
+    const expense = Math.abs(amounts.filter((a) => a < 0).reduce((a, b) => a + b, 0));
+    const balance = income - expense;
+    res.json({ income, expense, balance });
   } catch (err) {
     res.status(500).json({ message: "Error fetching summary", error: err.message });
   }

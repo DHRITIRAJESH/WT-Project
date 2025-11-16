@@ -1,24 +1,25 @@
 .footer {
-  background: rgba(255, 255, 255, 0.05);
-  /*backdrop-filter: blur(10px);*/
-  color: #bdbdbd;
+  background: rgba(30, 30, 46, 0.95);
+  backdrop-filter: blur(10px);
+  color: #808080;
   text-align: center;
   padding: 20px 0;
   font-size: 1rem;
-  box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.6);
+  border-top: 1px solid rgba(139, 155, 255, 0.3);
   width: 100%;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
 
 .footer:hover {
-  color: #ffffff;
+  color: #b0b0b0;
 }
 
 .footer span {
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  /*-webkit-background-clip: text;*/
+  background: linear-gradient(90deg, #8b9bff, #667eea);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 600;
 }
